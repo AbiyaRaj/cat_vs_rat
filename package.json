@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "bake:models": "node tools/bake-models.mjs"
+    "preview": "vite preview"
   },
   "dependencies": {
     "react": "^18.3.1",

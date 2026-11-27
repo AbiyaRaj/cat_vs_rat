@@ -12,6 +12,7 @@ export default function WaveDone({ info, onContinue, onMenu }) {
         <p>
           Next up: <b>wave {info.next} of {info.total}</b>. Catch <b>{info.target}</b> {info.rats ? 'rats' : 'mice'} ({coats}).
         </p>
+        <p>They are after your <b>{info.foodEmoji} {info.food}</b> now{info.scene ? <> · Scene: <b>{info.scene}</b></> : null}.</p>
         {info.evil > 0 && <p className="evil">{EVIL[info.evil]}</p>}
         <div className="row col">
           <button className="btn" onClick={onContinue} autoFocus>CONTINUE ▶</button>

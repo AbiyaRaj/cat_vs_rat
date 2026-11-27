@@ -95,3 +95,13 @@ html,body{height:100%;overflow:hidden;background:#2f5a1c;font-family:Nunito,syst
 .paused-title{color:var(--ink)!important;letter-spacing:.06em}
 .row.col{flex-direction:column;align-items:stretch;gap:4px}
 @media (max-width:640px){ #pauseBtn{font-size:12px;padding:3px 6px} }
+
+/* accessory locks, prices and colour swatches */
+.chip.locked{opacity:.62}
+.chip.prem{background:linear-gradient(135deg,#fff3c4,#f6dc8a)!important;opacity:.85}
+.chip .tag{margin-left:6px;font-size:10px;font-weight:900;padding:1px 5px;border-radius:6px;background:rgba(0,0,0,.12)}
+.chip .tag.gold{background:#d9a21a;color:#fff}
+.chips.swatches{margin-top:6px;gap:6px}
+.swatch{width:24px;height:24px;border-radius:50%;border:2px solid rgba(0,0,0,.15);cursor:pointer;padding:0}
+.swatch.on{border:3px solid var(--ink);transform:scale(1.12)}
+.opt label small{font-weight:600;text-transform:none;letter-spacing:0}

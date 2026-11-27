@@ -2,7 +2,7 @@ export default function GameOver({ ui, onAgain, onCustomise }) {
   return (
     <div id="over" className="overlay">
       <div className="card">
-        <h2>{ui.won ? '🏆 YOU WIN!' : 'CHEESE GONE'}</h2>
+        <h2>{ui.won ? '🎉 CONGRATULATIONS!' : '🐀 BANDICOOTS WON!'}</h2>
         <p>{ui.overMsg}</p>
         <div className="big">{ui.finalScore}</div>
         <p className="muted">{ui.finalInfo}</p>

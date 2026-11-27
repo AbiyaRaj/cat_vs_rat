@@ -50,7 +50,7 @@ export default function App() {
       )}
 
       {/* The menu stays mounted so its preview canvas exists before the engine starts. */}
-      <Menu hidden={ready ? !ui.menu : false} game={game} settings={ui?.settings} previewRef={previewRef} />
+      <Menu hidden={ready ? !ui.menu : false} game={game} settings={ui?.settings} previewRef={previewRef} progress={ui?.maxWave || 1} unlockAll={ui?.unlockAll} />
 
       {error && <div id="err">{error}</div>}
     </>
